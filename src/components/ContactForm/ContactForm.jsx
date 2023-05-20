@@ -1,7 +1,7 @@
 import s from 'Styles.module.css';
 
 import { useState } from 'react';
-import { useContacts } from '../Hooks/Hooks';
+import { useContacts } from '../../Hooks/Hooks';
 import { infoToast, successToast } from '../Toasts/Toasts';
 
 export const ContacstForm = () => {
@@ -22,7 +22,6 @@ export const ContacstForm = () => {
       default:
         break;
     }
-    console.log(name, value);
   };
 
   const handleSubmit = async event => {
